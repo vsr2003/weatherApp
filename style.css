@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    /* border: 5px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    flex-direction: column;
+    background-color: black;
+    background-image: url('./paper-cut-blue-color-cylinder-podium-clouds-with-raindrops-products-display-presentation-vector-illustration_55710-1036.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#weather-app{
+    width: 100%;
+    height: 5%;
+    /* border: 2px solid black; */
+    text-align: center;
+}
+#weather-app p{
+    font-size: 1.3em;
+    font-weight: 600;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+/* main box */
+.main-box{
+    height: 70%;
+    width: 70%;
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+   border-collapse: collapse;
+}
+/* left div */
+#left{
+    height: 100%;
+    width: 35%;
+    /* border: 2px solid black; */
+    border-radius: 2%;
+    border-collapse: collapse;
+    /* background-color: lightskyblue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 5px 2px whitesmoke;
+    background-image: url(./9378248_33932.jpg);
+    background-size: 100% 150%;
+}
+
+.made-with-love{
+    height: 60%;
+    width: 70%;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 2.5;
+}
+.made-with-love p{
+    text-align: center;
+    color: black;
+    user-select: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: larger;
+    font-weight: 800;
+}
+
+.left-content{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: 5s;
+}
+
+.upper-left{
+    /* border: 1px solid black; */
+    height: 40%;
+    width: 100%;
+    color: black;
+}
+.lower-left{
+    /* border: 1px solid black; */
+    height: 40%;
+    width: 100%;
+    color: black;
+}
+
+
+/* right div */
+#right{
+    height: 95%;
+    width: 65%;
+    /* border: 2px solid ; */
+    border-top-right-radius: 3%;
+    border-bottom-right-radius: 3%;
+    border-collapse: collapse;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* background-color: black; */
+    box-shadow: 0 0 5px 2px whitesmoke;
+    backdrop-filter: blur(5px);
+}
+
+#right .two-search-divs{
+    height: 8%;
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#right .two-search-divs div{
+    width: 47%;
+    height: 100%;
+    /* border: 1px solid black; */
+    border-radius: 10em;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    transition: 6ms;
+}
+#right .two-search-divs div:hover{
+    background-color: lightskyblue;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    scale: 1.05;
+}
+
+#right .right-middle{
+    width: 100%;
+    height: 8%;
+    border: 1px solid black;
+    display: none;
+}
+
+#right .right-content{
+    height: 70%;
+    width: 100%;
+    /* border: 1px solid black; */
+}
+
+#right .right-content .first-view{
+    height: 100%;
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    gap: 15%;
+}
+#right .right-content .first-view p{
+    text-align: center;
+    user-select: none;
+}
+#quote-para{
+    font-size: 2em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 500;
+}
+
+/* view your location */
+.view-your-location {
+    height: 100%;
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10%;
+}
+.view-your-location button{
+    border-radius: 5em;
+    width: 70%;
+    height: 10%;
+    transition: 0.5s;
+}
+.view-your-location button:hover{
+    scale: 1.1;
+    background-color: lightskyblue;
+    color: black;
+}
+table{
+    /* border: 1px solid black; */
+    border-collapse: collapse;
+    height: 70%;
+    width: 80%;
+    text-align: center;
+    user-select: none;
+    opacity: 0%;
+    backdrop-filter: blur(40px);
+}
+td{
+    /* border: 1px solid black; */
+    width: 50%;
+    color: black;
+    /* background-color: white; */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+tr:hover{
+    /* background-color: lightcyan;
+    color: black; */
+    scale: 1.1;
+    color: lightskyblue;
+    transition: 300ms;
+}
+
+/* view search city */
+.view-search-city{
+    height: 100%;
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10%;
+}
+.view-search-city .search-field{
+    /* border: 1px solid black; */
+    width: 80%;
+    height: 10%;
+    display: flex;
+    justify-content: space-around;
+}
+#btn_search:hover{
+    scale: 1.1;
+    background-color: lightskyblue;
+    transition: .2s;
+}
+input:focus::placeholder {
+    color: transparent;
+  }

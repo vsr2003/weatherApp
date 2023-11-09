@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <div class="container">
+
+        <div id="weather-app">
+            <!-- <p style="color: yellow; user-select: none; font-size: 2rem;">Weather App </p> -->
+        </div>
+
+        <!-- main box which will be in center holding left and right div -->
+        <div class="main-box">
+
+            <!-- left div -->
+            <div id="left">
+                
+                <div class="made-with-love" >
+                        
+                <p>Made</p>
+                <p>with</p>
+                <p><img src="./heart.png" alt="Love" style="height: 20px; width: 20px;"></p>
+                <p>by</p>
+                <p>VsR</p>
+
+                </div>
+
+                <div class="left-content" style="display: none;">
+
+                        <div class="upper-left" >
+                             <p id="paraCity" style="font-size: 3.5em; font-weight: 400; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; user-select: none;">Bhopal</p>
+                             <p id="paraCountry" style="font-size: 1.5em; font-weight: 100; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; user-select: none;">INDIA</p>
+                        </div>
+    
+                        <div class="lower-left">
+                            <p id="paraTemp" style="font-size: 4.5em; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; user-select: none;">36.33</p>
+                            <p id="paraFeelsLike" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-weight: 400; user-select: none;">Clear Sky</p>
+                        </div>
+
+                </div>
+
+
+            </div>
+    
+            <!-- right div -->
+            <div id="right">
+
+                <!-- div for searchByLocation and searchByCity buttons -->
+                <div class="two-search-divs">
+                        <div id="div-yourLocation">Your Location</div>
+                        <div id="div-cityLocation">Search City</div>
+                </div>
+
+                <!-- div for containing searchField or YourLocation button -->
+                <div class="right-middle">
+
+                </div>
+
+                <!-- div for containing right contents -->
+                <div class="right-content">
+                    
+                    <!-- first view -->
+                    <div class="first-view">
+
+                        <p id="red-para" style="color: red;"> Please Select Any Option above.</p>
+                       <i> <p id="quote-para" style="color: white;">"A change in the weather <br> is sufficient to recreate <br> the world and ourselves."</p> </i>
+
+                    </div>
+
+                    <!-- view on your location -->
+                    <div class="view-your-location" style="display: none;">
+
+                            <button id="yourLocation">Enable Location</button>
+
+                            <table id="table_your_location">
+                            <tr>
+                                    <td>Pressure</td>
+                                    <td id="pressure0">0</td>
+                            </tr>
+                            <tr>
+                                    <td >Humidity</td>
+                                    <td id="humidity0">0</td>
+                            </tr>
+                            <tr>
+                                    <td>Wind Speed</td>
+                                    <td id="windSpeed0">0</td>
+                            </tr>
+                            <tr>
+                                    <td>Visibility</td>
+                                    <td id="visibility0">0</td>
+                            </tr>
+                            <tr>
+                                    <td>Country</td>
+                                    <td id="country0">0</td>
+                            </tr>
+                            </table>
+
+                    </div>
+
+                    <!-- view search city -->
+                    <div class="view-search-city" style="display: none">
+
+                        <div class="search-field">
+                            <input type="text" name="" id="searchCity" placeholder="Search City" style="width: 70%; height: 100%; text-align: center;">
+                            <button id="btn_search" style="width: 20%; height: 100%;">Search</button>
+                        </div>
+
+                        <table id="table_search_city">
+                            <tr>
+                                    <td>Pressure</td>
+                                    <td id="pressure1">0</td>
+                            </tr>
+                            <tr>
+                                    <td >Humidity</td>
+                                    <td id="humidity1">0</td>
+                            </tr>
+                            <tr>
+                                    <td>Wind Speed</td>
+                                    <td id="windSpeed1">0</td>
+                            </tr>
+                            <tr>
+                                    <td>Visibility</td>
+                                    <td id="visibility1">0</td>
+                            </tr>
+                            <tr>
+                                    <td>Country</td>
+                                    <td id="country1">0</td>
+                            </tr>
+                            </table>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
